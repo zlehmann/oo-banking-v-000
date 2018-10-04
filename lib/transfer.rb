@@ -10,9 +10,7 @@ class Transfer
   end
 
   def valid?(sender, reciever, amount)
-    sender_is_valid = sender.valid?
-    receiver_is_valid = receiver.valid?
-    if sender_is_valid == true && receiver_is_valid == true
+    if @sender.valid? == true && @reciever.valid? == true
       return true
     else
       return false
